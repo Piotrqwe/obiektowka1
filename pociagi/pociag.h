@@ -1,15 +1,13 @@
 #pragma once
 #include <iostream>
+#include <vector>
 #include "wagon.h"
 
 using namespace std;
 
-
-
-
-class pociag {
+class Pociag {
 public:
-	wagon *next = NULL;
+	vector<Wagon> wagony;
 	double masa_max;
 	double srednia_masa_dopuszczalna_wagonow();
 	double masa_dopuszczalna_wagonow();

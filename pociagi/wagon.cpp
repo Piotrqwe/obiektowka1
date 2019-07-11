@@ -1,12 +1,10 @@
 #include "wagon.h"
 
+void setMasaMax(){
 
-void osobowy::opisz() {
-	cout << "osobowy:\nmaksymalna masa = " << masa_max << "\nilosc miejsc = " << miejsca << endl << endl;
 }
 
-void towarowy::opisz() {
-	cout << "towarowy:\nmaksymalna masa = " << masa_max << "\npojemnosc = " << pojemnosc << endl << endl;
-}
-
-
+Wagon::Wagon(double masa)
+{
+	this->masa_max = masa;
+};

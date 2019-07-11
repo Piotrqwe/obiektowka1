@@ -35,3 +35,4 @@
 *.sln
 .vs
 *.vcxproj*
+Debug/

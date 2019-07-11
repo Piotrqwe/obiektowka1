@@ -1,9 +1,12 @@
 #include "wagon.h"
+#include <iostream>
+#include <string>
 #pragma once
 using namespace std;
 
 class Osobowy : public Wagon {
 public:
 	int miejsca;
-	void opisz();
-};
+	string toString();
+	Osobowy(double masa, int miejsca);
+}; 

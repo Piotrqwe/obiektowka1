@@ -1,13 +1,6 @@
 #include "wagon.h"
 
 
-
-
-
-
-
-
-
 void osobowy::opisz() {
 	cout << "osobowy:\nmaksymalna masa = " << masa_max << "\nilosc miejsc = " << miejsca << endl << endl;
 }

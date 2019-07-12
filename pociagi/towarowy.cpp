@@ -1,7 +1,6 @@
 #include "towarowy.h"
 
-string Towarowy::toString()
-{
+string Towarowy::toString() {
 	return "Towarowy:\n\t\tudzwig:" + to_string(this->masa_max) + "\n\t\tpojemnosc: " + to_string(this->pojemnosc) + "\n";
 }
 

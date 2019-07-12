@@ -1,7 +1,12 @@
 #include "pociag.h"
 
 double Pociag::srednia_masa_dopuszczalna_wagonow() {
+	if (this->wagony.size()){
 	return this->masa_dopuszczalna_wagonow() / (double)this->wagony.size();
+	}
+	else {
+		return 0;
+	}
 }
 
 double Pociag::masa_dopuszczalna_wagonow() {

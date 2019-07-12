@@ -2,6 +2,7 @@
 #include "pociag.h"
 #include "towarowy.h"
 #include "osobowy.h"
+#include "cargo.h"
 
 using namespace std;
 
@@ -19,7 +20,7 @@ Pociag* mock() {
 void dodawanieWagonu(Pociag *p) {
 	int wybor, miejsca;
 	double udzwig, pojemnosc;
-	cout << "1.Osobowy\n2.Towarowy\n";
+	cout << "1.Osobowy\n2.Towarowy\n3.Cargo\n";
 	cin >> wybor;
 	switch (wybor){
 	case 1:
@@ -35,6 +36,17 @@ void dodawanieWagonu(Pociag *p) {
 		cout << "podaj pojemnosc: ";
 		cin >> pojemnosc;
 		p->dodaj_wagon(new Towarowy(udzwig, pojemnosc));
+		return;
+	case 3:
+		string producent;
+		cout << "podaj udzwig: ";
+		cin >> udzwig;
+		cout << "podaj pojemnosc: ";
+		cin >> pojemnosc;
+		cout << "podaj producenta: ";
+		cin.ignore(cin.rdbuf()->in_avail());
+		getline(cin, producent);
+		p->dodaj_wagon(new Cargo (udzwig, pojemnosc, producent));
 		return;
 	}
 	return;
